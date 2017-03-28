@@ -75,7 +75,7 @@ dependencies:
 We have now implemented all components and can build the docker image. In the commandline run:
 
 ```
-docker build . -t MyFirstDSProdContainer
+docker build . -t dsprodcontainer
 ```
 
 During the docker build a number of steps will be taken. The base image for this container is the Miniconda docker image, this has conda preinstalled. Then all the files from the directory will be added to the container. A conda env will be created based on the `environment.yaml` file. 
@@ -85,7 +85,7 @@ During the docker build a number of steps will be taken. The base image for this
 Run the docker image, and expose port 5000.
 
 ```
-docker run -p5000:5000 MyFirstDSProdContainer
+docker run -p5000:5000 dsprodcontainer
 ```
 
 
